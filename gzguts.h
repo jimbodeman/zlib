@@ -54,6 +54,7 @@
 #endif
 
 #if defined(STDC99) || (defined(__TURBOC__) && __TURBOC__ >= 0x550)
+#  include <unistd.h>   /* added for Linux with non native application code */
 #  ifndef HAVE_VSNPRINTF
 #    define HAVE_VSNPRINTF
 #  endif
